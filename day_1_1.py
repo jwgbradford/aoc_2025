@@ -1,4 +1,4 @@
-with open('day_1_test.txt') as my_file:
+with open('day_1_1_input.txt') as my_file:
     data : list[str] = my_file.read().splitlines()
 
 password : int = 0
