@@ -9,6 +9,6 @@ for id_range in data:
         id_str = str(id)
         if len(id_str) % 2 == 0:
             if id_str[:len(id_str)//2] == id_str[len(id_str)//2:]:
-                invalid_id_total += 1
-                print(f"Invalid ID found: {id_str}")
+                invalid_id_total += id
+                #print(f"Invalid ID found: {id_str}")
 print(invalid_id_total)
