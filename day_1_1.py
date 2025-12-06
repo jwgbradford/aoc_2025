@@ -8,6 +8,8 @@ for line in data:
     direction : str = line[0]
     steps : int = int(line[1:])
 
+    steps = steps % 100 # since the dial wraps around every 100
+
     if direction == 'R':
         dial += steps
     elif direction == 'L':
